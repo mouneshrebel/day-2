@@ -1,0 +1,36 @@
+1. List the differences between Browser JS(console) v Nodejs
+
+JavaScript/JSConsole(browser):
+
+>Javascipt is a programminng/scripting language used for writing scipts on website.
+>Js can be run only in browsers.
+>Js is basically used on client side.
+>Js is able to add HTML and manage with DOM.
+>Js can run in any browser engine (v8 for chrome and Spidermonkey for Firefox)
+>js frameworks are RamdaJS, TypedJS, etc.
+>Js is used mainly in Frontend development.
+
+=>"window" is a predefined global object which has functions to deal with the window that has been drawn.
+=>"location" is also predefined object in browsers which has all the info related to url that's loaded.
+=>"document" another predefined global variable has the html which is rendered.
+=>Browsers may have an object with name "global", but it will be exact one as "window".
+=>Browsers dont have "require" predefined. It can be included in an app for asynchronous file loading.
+=>Moduling is not important at client side javascript(i.e, browsers).
+
+
+NodeJS:
+
+>NodeJS is a javascript runtime environment.
+>Enables javascript code to run outside the browser with help of NodeJS.
+>It is mainly used at the server side.
+>NodeJS doesnt have capability to add HTML tags.
+>V8 is the js engine inside node.js which parses and runs javascript code.
+>NodeJS modules are Lodash, express, etc.
+>It is generally used in Backend development.
+
+=>NodeJS doesnt have predefined "window" object bcoz it doesnt have a window to draw something.
+=>"location" object is related to specific url; which is page specific. Hence nodejs doesnt need that.
+=>it also doesnt have "document" object, bcoz it doesnt need to render anything in a page.
+=>Nodejs has "global" as predefined object containing functions that arent available in browsers bcoz they are required for server side tasks only.
+=>"require" object is predefined in Nodejs which is used to include modules in the app.
+=>In nodejs everything is a module. Thus, code must be kept inside a module.

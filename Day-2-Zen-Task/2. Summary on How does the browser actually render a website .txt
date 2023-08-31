@@ -1,0 +1,18 @@
+2. How does the browser actually render a website ? {video from JSConf}
+
+-Browser is most commonly used application in the world. About Components of a browser like binding, rendering, platform and JS virtual machine.
+-High level flow, how to parse HTML and how to parse CSS. Parsing Flow, tokenizer (start and end tag), parse tree and DOM tree intro.
+-Html tags like <script>,<link> and <style>. Speculating parsing will also process external scripts and images, etc.
+-parsing process can be interrupted by Reentrant. <script/> tag at bottom can will make parsing uninterrupted will make it faster to render.
+-Parsing a HTML document and CSS parsing with CSSOM.
+-Render/Frame tree - DOM + CSS combination of 2 object models and style resolution. Shows actual representation on screen.
+-Render tree has Multiple trees like RenderObjects, RenderStyles, RenderLayers and Line boxes.
+-DOM node to RenderObject will give visual output and geometric info. All layout info is displayed by calculating all visual properties.
+-Retransfer/relayout - Recursive process(transverse render tree, nodes position and size). browser will automatically  rempas the layout according to user changes so process in asynchronous.
+-FastDOM will prevent layout thrashing.
+-Paint Setup helps in creating layers by taking layed out render trees and computes bitmaps and composites on screen. actually helps to paint backgroung color page colur,etc.
+-inline critical CSS will speed up first paint times, and it is most impotant bits of the site.
+
+>Parsing-->DOM Tree
+>DOM Tree-->Render Tree
+>Hence its actually 4 trees present.
